@@ -1,0 +1,43 @@
+
+menu.o:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	55                   	push   %ebp
+   1:	89 e5                	mov    %esp,%ebp
+   3:	83 e4 f0             	and    $0xfffffff0,%esp
+   6:	83 ec 30             	sub    $0x30,%esp
+   9:	c7 44 24 18 c8 00 00 	movl   $0xc8,0x18(%esp)
+  10:	00 
+  11:	c7 44 24 1c 38 ff ff 	movl   $0xffffff38,0x1c(%esp)
+  18:	ff 
+  19:	c7 44 24 20 01 00 00 	movl   $0x80000001,0x20(%esp)
+  20:	80 
+  21:	c7 44 24 24 c8 00 00 	movl   $0xc8,0x24(%esp)
+  28:	00 
+  29:	c7 44 24 28 38 ff ff 	movl   $0xffffff38,0x28(%esp)
+  30:	ff 
+  31:	c7 44 24 2c 01 00 00 	movl   $0x80000001,0x2c(%esp)
+  38:	80 
+  39:	b8 00 00 00 00       	mov    $0x0,%eax
+  3e:	8b 54 24 20          	mov    0x20(%esp),%edx
+  42:	89 54 24 0c          	mov    %edx,0xc(%esp)
+  46:	8b 54 24 1c          	mov    0x1c(%esp),%edx
+  4a:	89 54 24 08          	mov    %edx,0x8(%esp)
+  4e:	8b 54 24 18          	mov    0x18(%esp),%edx
+  52:	89 54 24 04          	mov    %edx,0x4(%esp)
+  56:	89 04 24             	mov    %eax,(%esp)
+  59:	e8 fc ff ff ff       	call   5a <main+0x5a>
+  5e:	b8 19 00 00 00       	mov    $0x19,%eax
+  63:	8b 54 24 2c          	mov    0x2c(%esp),%edx
+  67:	89 54 24 0c          	mov    %edx,0xc(%esp)
+  6b:	8b 54 24 28          	mov    0x28(%esp),%edx
+  6f:	89 54 24 08          	mov    %edx,0x8(%esp)
+  73:	8b 54 24 24          	mov    0x24(%esp),%edx
+  77:	89 54 24 04          	mov    %edx,0x4(%esp)
+  7b:	89 04 24             	mov    %eax,(%esp)
+  7e:	e8 fc ff ff ff       	call   7f <main+0x7f>
+  83:	c9                   	leave  
+  84:	c3                   	ret    
