@@ -1,5 +1,5 @@
 /* m1.c*/
-void pl(void);
+void p1(void);
 int main()
 
 {
