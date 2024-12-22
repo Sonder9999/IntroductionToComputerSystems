@@ -1,4 +1,5 @@
-double x;
+// double x;
+static double x;
 
 void proc1()
 {
