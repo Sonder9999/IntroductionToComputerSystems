@@ -1,6 +1,7 @@
 #include <stdio.h>
 unsigned x = 257;
-short y, z = 2;
+// short y, z = 2;
+short y = 1,z = 2;
 void proc1(void);
 void main()
 {
